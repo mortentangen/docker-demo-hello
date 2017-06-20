@@ -7,8 +7,8 @@ const app = express();
 app.get('/', function (req, res) {
   http.get(
     {
-      host: 'localhost',
-      port: 3001,
+      host: 'world-container',
+      port: 3000,
       path: '/'
     },
     response => {
