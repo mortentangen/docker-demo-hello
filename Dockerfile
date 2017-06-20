@@ -6,7 +6,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # hent liste over tilgjengelige biblioteker & versjoner
-RUN apt-get update
+RUN apt-get update -qq
 
 # installer nodejs og npm (-y svarer yes på installasjonsspm, -q for quiet)
 RUN apt-get install nodejs npm -yq
